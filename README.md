@@ -32,7 +32,7 @@ cd
 sudo cp /usr/share/doc/openvpn/examples/sample-keys/ca.crt ~
 sudo gunzip -c /usr/share/doc/openvpn/examples/sample-keys/client.crt.gz > ~/client.crt
 sudo cp /usr/share/doc/openvpn/examples/sample-keys/client.key ~
-sudo cat>client.conf<<EOF
+sudo cat>~/client.conf<<EOF
 client
 dev tun
 proto udp
