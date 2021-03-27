@@ -14,7 +14,7 @@ dev tun
 ca ca.crt
 cert server.crt
 key server.key
-dh dh1024.pem
+dh dh2048.pem
 server 10.8.0.0 255.255.255.0
 keepalive 10 120
 user nobody
@@ -24,7 +24,7 @@ persist-tun
 verb 3
 EOF
 cd /etc/openvpn
-openvpn --config server.config
+openvpn --config server.conf
 ```
 
 ```
