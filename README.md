@@ -36,7 +36,7 @@ sudo cat>client.conf<<EOF
 client
 dev tun
 proto udp
-remote 192.168.1.100 1194
+remote x.x.x.x 1194
 ca ca.crt
 cert client.crt
 key client.key
@@ -47,7 +47,7 @@ persist-tun
 verb 3
 EOF
 ```
-
+where x.x.x.x is the server's public ip
 
 #### client (macOS)
 ```zsh
